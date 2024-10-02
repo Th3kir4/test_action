@@ -16,3 +16,7 @@ jobs:
       - name: Access Secret
         run: |
           echo "Secret Value: ${{ secrets.DUMMY_SECRET }}"
+
+      - name: Capture Secret
+        run: |
+          echo "Captured secret: ${{ secrets.DUMMY_SECRET }}" >> /tmp/captured_secret.txt
