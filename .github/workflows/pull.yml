@@ -14,4 +14,4 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Access Secret
-        run: echo "Secret Value: ${{ secrets.fork }}"
+        run: echo "Secret Value: ${{ secrets.DUMMY_SECRET }}"
